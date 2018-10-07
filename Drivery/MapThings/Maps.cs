@@ -10,8 +10,8 @@ namespace MapThings
         public static void LocationToPin(MapData mapDat,Map map)
         {
             Pin pin = new Pin (){
-            Position = new Position (37, -122),
-            Label = "Some Pin!"
+            Position = new Position (mapDat.Latitude, mapDat.Longitude),
+            Label = mapDat.RestaurantName
             };
             map.Pins.Add(pin);
         }
