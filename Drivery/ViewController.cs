@@ -36,17 +36,12 @@ namespace Drivery
                  
                 return new double[2]{Convert.ToDouble(sLat),Convert.ToDouble(sLong)};
         }
-        
-        private void SearchBar_OnTextChanged(object sender, KeyEventArgs e)
+
+        private void YassBootun_Clicked (object sender , EventArgs e) 
         {
-            if (e.Key == Key.Enter)
-            {
-                
-            }
-            
-            
-           Console.Write("A");
-           //RestaurantMap
+            //DestinationBar
+            (sender as Button).Text = "I was just clicked";
+            //public event EventHandler<Xamarin.Forms.TextChangedEventArgs> TextChanged;
         }
     }
 }
