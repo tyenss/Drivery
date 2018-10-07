@@ -12,6 +12,15 @@ namespace Drivery
             // Note: this .ctor should not contain any initialization logic.
         }
 
+        public ViewController(string name)
+        {
+            
+        }
+
+        public void getMap()
+        {
+            
+        }
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -35,13 +44,6 @@ namespace Drivery
                 string sLat = bingMapsXmlDoc.DocumentElement.SelectSingleNode(@".//rest:Latitude", nsmgr).InnerText;
                  
                 return new double[2]{Convert.ToDouble(sLat),Convert.ToDouble(sLong)};
-        }
-
-        private void YassBootun_Clicked (object sender , EventArgs e) 
-        {
-            //DestinationBar
-            (sender as Button).Text = "I was just clicked";
-            //public event EventHandler<Xamarin.Forms.TextChangedEventArgs> TextChanged;
         }
     }
 }
