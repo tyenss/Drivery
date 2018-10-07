@@ -1,13 +1,13 @@
-﻿using System;
+﻿ using System;
 using UIKit;
 using Xamarin.Forms.Maps;
 
 namespace MapThings
 {
-    public static class Maps
+    public class Maps
     {
         
-        public static void LocationToPin(MapData mapDat,Map map)
+        public void LocationToPin(MapData mapDat,Map map)
         {
             Pin pin = new Pin (){
             Position = new Position (mapDat.Latitude, mapDat.Longitude),
@@ -16,7 +16,7 @@ namespace MapThings
             map.Pins.Add(pin);
         }
         
-        public static void LocationToPinArray(MapData[] mapData,Map map)
+        public void LocationToPinArray(MapData[] mapData,Map map)
         {
             for (int i=0;i<mapData.Length;i++)
             {
@@ -28,9 +28,11 @@ namespace MapThings
             }
         }
         
-        public static void AddressToLatLong()
+        public void AddressToLatLong()
         {
             
         }
+        
+        public bool IsShowingUser { get; set; }
     }
 }

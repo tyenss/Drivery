@@ -10,15 +10,12 @@ namespace MapThings
     {
         public EnableLocation()
         {
-            /*ViewController vc = new ViewController("RestaurantMap");
-            map = vc.getMap();
+            ViewController vc = new ViewController("RestaurantMap");
+            Maps map = vc.getMap();
             CoreLocation.CLLocationManager locationManager = new CoreLocation.CLLocationManager();
             locationManager.RequestWhenInUseAuthorization();
-            map.IsShowingUser = true;*/
-            
-            
-            
-            
+            map.IsShowingUser = true;
+                      
             // add an annotation
             /*map.AddAnnotations (new MKPointAnnotation (){
                 Title="MyAnnotation",

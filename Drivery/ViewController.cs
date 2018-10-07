@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using System.Xml;
 using UIKit;
+using MapThings;
 
 namespace Drivery
 {
@@ -17,9 +18,9 @@ namespace Drivery
             
         }
 
-        public void getMap()
+        public Maps getMap()
         {
-            
+            return null;
         }
         public override void ViewDidLoad()
         {

@@ -31,12 +31,21 @@
                                 <rect key="frame" x="44" y="539" width="327" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1592" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" opaque="NO">
+                                <rect key="frame" x="47" y="113" width="320" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="YasssBootun_TouchUpInside:" destination="BYZ-38-t0r" id="1594" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="RestaurantMap" destination="197" id="name-outlet-197"/>
                         <outlet property="DestinationBar" destination="212" id="name-outlet-212"/>
                         <outlet property="ListView" destination="213" id="name-outlet-213"/>
+                        <outlet property="YasssBootun" destination="1592" id="name-outlet-1592"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -47,7 +47,7 @@ namespace MapThings{
             return restaurantsList.ToArray();
         }
         
-        public double[] AddresstoLatLong(string street, string city, string state)
+        public static double[] AddresstoLatLong(string street, string city, string state)
         {
             string bingMapsUri = string.Format(@"http://dev.virtualearth.net/REST/v1/Locations/US/" + Regex.Replace
             (street,"#","") + ", " + city + ", " + state + "?o=xml&amp;key=BingMapsKey");
