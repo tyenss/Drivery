@@ -25,6 +25,14 @@ namespace Drivery
         [GeneratedCode ("iOS Designer", "1.0")]
         MapKit.MKMapView RestaurantMap { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton YasssBootun { get; set; }
+
+        [Action ("YasssBootun_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void YasssBootun_TouchUpInside (UIKit.UIButton sender);
+
         void ReleaseDesignerOutlets ()
         {
             if (DestinationBar != null) {
@@ -40,6 +48,11 @@ namespace Drivery
             if (RestaurantMap != null) {
                 RestaurantMap.Dispose ();
                 RestaurantMap = null;
+            }
+
+            if (YasssBootun != null) {
+                YasssBootun.Dispose ();
+                YasssBootun = null;
             }
         }
     }
